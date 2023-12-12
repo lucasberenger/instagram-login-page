@@ -22,9 +22,10 @@ body {
     
 }
 
-img {
-    width: 350px;
+svg, img {
+    width: 100%;
 }
+    
 
 a {
     cursor: pointer;
@@ -56,7 +57,7 @@ button {
     cursor: pointer;
 }
     
-    
+ 
 
 
 
@@ -65,11 +66,15 @@ button {
     width: 500px;
     height: 700px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-    
 
-.logo {
-    margin: 100px 0 0px 50px;
+.insta-logo {
+    width: 300px;
 }
 
 .login-area {
@@ -91,8 +96,6 @@ button {
     display: flex;
     justify-content: center;
 }
-    
-    
 
 .sing-in {
     font-size: 14px;
@@ -106,7 +109,75 @@ button {
 .sing-in a {
     font-weight:bold;
 }
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin-top: 50px;
+        width: 400px;
+        height: 600px;
+    }
+    .insta-logo {
+        width: 250px;
+    }
+
+    .login-area {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .container {
+        margin: 0 auto;
+        width: 350px;
+        height: 500px;
+    }
+        
+    .insta-logo {
+        width: 150px;
+    }
+
+    .login-area {
+        font-size: 14px;
+    }
+        
+
+    form {
+        height: 300px;
+        margin-left: 50px;
+    }
+        
+
+    input {
+        width: 200px;
+    }
+
+   
+    button {
+        margin-right: 50px;
+        padding: 10px;
+    }
+
+    .forgotten {
+        margin-left: 0;
+    }
+
+    .alternate-login {
+        margin-top: 10px;
+        margin-right: 50px;
+        font-size: 14px;
+    }
     
+    .sing-in {
+        margin-right: 50px;
+        font-size: 12px;
+    }
+        
+        
+        
+        
+        
+        
+}
     
     
     
